@@ -49,19 +49,14 @@
       return;
     }
 
-    const fatherNames = [
-      "pardeep",
-      "pardeep kumar",
-      "pardeep kumar jha"
-    ];
-
-    if (fatherNames.includes(name)) {
-      messageEl.textContent = "Shambhu always loves you, Pardeep Kumar Jha ❤️";
+    if (name === "pardeep kumar jha") {
+      messageEl.textContent = "I always love you, Papa ❤️";
     } else {
       const formattedName = rawName.charAt(0).toUpperCase() + rawName.slice(1);
       messageEl.textContent = `I always love you, ${formattedName} ❤️`;
     }
   }
 </script>
+
 </body>
 </html>
