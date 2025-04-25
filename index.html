@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Always Love You</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background: #ffe6e6;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    h2 {
+      color: #cc0000;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi there! 💖</h1>
+  <p>What's your name?</p>
+  <input type="text" id="nameInput" placeholder="Enter your name" />
+  <button onclick="showMessage()">Submit</button>
+  <h2 id="message"></h2>
+
+  <script>
+    function showMessage() {
+      const name = document.getElementById("nameInput").value.trim();
+      if (name) {
+        document.getElementById("message").textContent = `I always love you, ${name} ❤️`;
+      } else {
+        alert("Please enter your name!");
+      }
+    }
+  </script>
+</body>
+</html>
